@@ -4,3 +4,56 @@
   --main-background: #3cdbc0;
   --main-text: #ffffff;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos del header */
+.home_header {
+  background-color: white;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_links {
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+  color: var(--menu-text);
+  margin: 10px;
+}
+
+/* Estilos del cuerpo */
+.home_main {
+  height: 100vh;
+  background-color: var(--main-background);
+  color: var(--main-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .title_line {
+  display: block;
+}
+ */
