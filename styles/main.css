@@ -8,17 +8,20 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-/* Estilos del header */
+/* Estilos mobile */
+/* Cabecera */
 .home_header {
   background-color: white;
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
+  padding-top: 10px;
 }
 
 .menu {
@@ -37,7 +40,7 @@
   margin: 10px;
 }
 
-/* Estilos del cuerpo */
+/* Cuerpo */
 .home_main {
   height: 100vh;
   background-color: var(--main-background);
@@ -48,12 +51,23 @@
 }
 
 .title {
-  text-align: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  font-size: 40px;
 }
 
-/* .title_line {
-  display: block;
+/* Estilos desktop */
+
+@media all and (min-width: 768px) {
+  .home_header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+    box-sizing: border-box;
+  }
+    .logo {
+
+    }
+  }
 }
- */
