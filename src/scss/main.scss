@@ -24,6 +24,7 @@
   position: fixed;
   top: 0;
   padding-top: 10px;
+  padding-bottom: 3px;
 }
 
 .menu {
@@ -36,15 +37,17 @@
 
 .menu_links {
   font-size: 16px;
+  text-transform: uppercase;
   display: block;
   text-decoration: none;
   color: var(--menu-text);
-  margin: 10px;
+  padding: 10px;
 }
 
 /* Cuerpo */
 .home_main {
   height: 100vh;
+  padding-top: 117px;
   background-color: var(--main-background);
   color: var(--main-text);
   display: flex;
@@ -57,6 +60,7 @@
   flex-direction: column;
   text-align: center;
   font-size: 30px;
+  text-transform: capitalize;
 }
 
 /* Estilos desktop */
@@ -73,6 +77,9 @@
     margin: 0 0 0 20px;
   }
 
+  .home_main {
+    padding-top: 105px;
+  }
   .title {
     font-size: 40px;
   }
